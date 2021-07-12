@@ -1,6 +1,7 @@
-# GitHub validator for Sloth CI
+# sloth-ci.validators.github
 
 Sloth CI validator for [GitHub](https://github.com/) push events.
+
 
 ## Installation
     
