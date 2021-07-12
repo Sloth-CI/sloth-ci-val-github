@@ -8,7 +8,7 @@ Sloth CI validator for [GitHub](https://github.com/) push events.
     $ pip install sloth-ci.validators.github
 
 
-# Usage
+## Usage
 
     provider:
         github:
