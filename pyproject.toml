@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sloth_ci.validators.github"
+name = "sloth_ci_val_github"
 version = "1.1.1"
 description = "GitHub validator for Sloth CI"
 authors = ["Constantine Molchanov <moigagoo@live.com>"]

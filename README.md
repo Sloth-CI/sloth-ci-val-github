@@ -1,11 +1,9 @@
-# sloth-ci.validators.github
-
-Sloth CI validator for [GitHub](https://github.com/) push events.
+# GitHub Validator for Sloth CI
 
 
 ## Installation
     
-    $ pip install sloth-ci.validators.github
+    $ pip install sloth-ci-val-github
 
 
 ## Usage
@@ -24,3 +22,4 @@ Sloth CI validator for [GitHub](https://github.com/) push events.
             branches:
                 - master
                 - staging
+
