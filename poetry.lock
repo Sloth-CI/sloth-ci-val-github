@@ -8,7 +8,7 @@ python-versions = "*"
 
 [[package]]
 name = "charset-normalizer"
-version = "2.0.1"
+version = "2.0.3"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 category = "main"
 optional = false
@@ -123,7 +123,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 
 [[package]]
 name = "jaraco.text"
-version = "3.5.0"
+version = "3.5.1"
 description = "Module for text manipulation"
 category = "main"
 optional = false
@@ -134,7 +134,7 @@ python-versions = ">=3.6"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "pytest-black (>=0.3.7)", "pytest-mypy"]
+testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [[package]]
 name = "more-itertools"
@@ -231,14 +231,14 @@ middleware = ["webob"]
 
 [[package]]
 name = "setuptools"
-version = "57.1.0"
+version = "57.4.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)", "pygments-github-lexers (==0.0.5)", "sphinx-inline-tabs", "sphinxcontrib-towncrier"]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "sphinx-inline-tabs", "sphinxcontrib-towncrier", "furo"]
 testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "mock", "flake8-2020", "virtualenv (>=13.0.0)", "pytest-virtualenv (>=1.2.7)", "wheel", "paver", "pip (>=19.1)", "jaraco.envs", "pytest-xdist", "sphinx", "jaraco.path (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [[package]]
@@ -251,24 +251,22 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "sloth-ci"
-version = "2.1.3"
-description = "Lightweight CI tool"
+version = "2.2.0"
+description = "Lightweight, standalone CI server."
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.9,<4.0"
 
 [package.dependencies]
-CherryPy = "*"
-cliar = "*"
-PyYAML = "*"
-requests = "*"
-Routes = "*"
-tabulate = "*"
+CherryPy = ">=18.6.0,<19.0.0"
+cliar = ">=1.3.4,<2.0.0"
+PyYAML = ">=5.4.1,<6.0.0"
+requests = ">=2.26.0,<3.0.0"
+Routes = ">=2.5.1,<3.0.0"
+tabulate = ">=0.8.9,<0.9.0"
 
 [package.extras]
-colors = ["colorama"]
-devtools = ["sloth-ci.ext.devtools"]
-flogs = ["sloth-ci.ext.file-logs"]
+colored_logs = ["colorama[colored_logs] (>=0.4.4,<0.5.0)"]
 
 [[package]]
 name = "tabulate"
@@ -327,7 +325,7 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "bc4fb523ceb87808b7babb0605cd5bb3d5113b0cebbc8a60fc2c8f7b5c9a9bd7"
+content-hash = "fdee66dab222a828170ee2d026341a2882aa5b4152a7d91f97527bcdd2f362d4"
 
 [metadata.files]
 certifi = [
@@ -335,8 +333,8 @@ certifi = [
     {file = "certifi-2021.5.30.tar.gz", hash = "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"},
 ]
 charset-normalizer = [
-    {file = "charset-normalizer-2.0.1.tar.gz", hash = "sha256:ad0da505736fc7e716a8da15bf19a985db21ac6415c26b34d2fafd3beb3d927e"},
-    {file = "charset_normalizer-2.0.1-py3-none-any.whl", hash = "sha256:b68b38179052975093d71c1b5361bf64afd80484697c1f27056e50593e695ceb"},
+    {file = "charset-normalizer-2.0.3.tar.gz", hash = "sha256:c46c3ace2d744cfbdebceaa3c19ae691f53ae621b39fd7570f59d14fb7f2fd12"},
+    {file = "charset_normalizer-2.0.3-py3-none-any.whl", hash = "sha256:88fce3fa5b1a84fdcb3f603d889f723d1dd89b26059d0123ca435570e848d5e1"},
 ]
 cheroot = [
     {file = "cheroot-8.5.2-py2.py3-none-any.whl", hash = "sha256:7ba11294a83468a27be6f06066df8a0f17d954ad05945f28d228aa3f4cd1b03c"},
@@ -367,8 +365,8 @@ idna = [
     {file = "jaraco.functools-3.3.0.tar.gz", hash = "sha256:bfcf7da71e2a0e980189b0744b59dba6c1dcf66dcd7a30f8a4413e478046b314"},
 ]
 "jaraco.text" = [
-    {file = "jaraco.text-3.5.0-py3-none-any.whl", hash = "sha256:b647f2bf912e201bfefd01d691bf5d603a94f2b3f998129e4fea595873a25613"},
-    {file = "jaraco.text-3.5.0.tar.gz", hash = "sha256:f07f1076814a17a98eb915948b9a0dc71b1891c833588066ec1feb04ea4389b1"},
+    {file = "jaraco.text-3.5.1-py3-none-any.whl", hash = "sha256:dc900b7916cefdaf943fbd43870abc8b0a6ff68f2c8c33e212fd51139219f68d"},
+    {file = "jaraco.text-3.5.1.tar.gz", hash = "sha256:ede4e9103443b62b3d1d193257dfb85aab7c69a6cef78a0887d64bb307a03bc3"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -438,17 +436,16 @@ routes = [
     {file = "Routes-2.5.1.tar.gz", hash = "sha256:b6346459a15f0cbab01a45a90c3d25caf980d4733d628b4cc1952b865125d053"},
 ]
 setuptools = [
-    {file = "setuptools-57.1.0-py3-none-any.whl", hash = "sha256:ddae4c1b9220daf1e32ba9d4e3714df6019c5b583755559be84ff8199f7e1fe3"},
-    {file = "setuptools-57.1.0.tar.gz", hash = "sha256:cfca9c97e7eebbc8abe18d5e5e962a08dcad55bb63afddd82d681de4d22a597b"},
+    {file = "setuptools-57.4.0-py3-none-any.whl", hash = "sha256:a49230977aa6cfb9d933614d2f7b79036e9945c4cdd7583163f4e920b83418d6"},
+    {file = "setuptools-57.4.0.tar.gz", hash = "sha256:6bac238ffdf24e8806c61440e755192470352850f3419a52f26ffe0a1a64f465"},
 ]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
 sloth-ci = [
-    {file = "sloth-ci-2.1.3.win-amd64.exe", hash = "sha256:e990a978303ae8bd3df59dee853ef89bc26b36f77ce1f479478aeb41c3d9d1d0"},
-    {file = "sloth-ci-2.1.3.zip", hash = "sha256:2fe85ec5749392dd7efe26c3428f0af0a8e79a51f85cccb7dbeb74d9557fa77b"},
-    {file = "sloth_ci-2.1.3-py3-none-any.whl", hash = "sha256:ce0c7a95e5407a4a6afef6244b1cdc0390ad74915d8c11a1de1754273d57d76e"},
+    {file = "sloth-ci-2.2.0.tar.gz", hash = "sha256:9d365342085faa8e366574f854210bd0c958fda7c18eebf975d0cff1d794ae78"},
+    {file = "sloth_ci-2.2.0-py3-none-any.whl", hash = "sha256:3031acd6eba5877122364abbf55165c618a5b0c937ba002b913dfa69aeada976"},
 ]
 tabulate = [
     {file = "tabulate-0.8.9-py3-none-any.whl", hash = "sha256:d7c013fe7abbc5e491394e10fa845f8f32fe54f8dc60c6622c6cf482d25d47e4"},
